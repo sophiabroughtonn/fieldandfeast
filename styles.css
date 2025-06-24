@@ -1,0 +1,277 @@
+/* CSS BY SOPHIA BROUGHTON */
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* CSS REST */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ROOT VARIABLES */
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+}
+/* GLOBAL STYLES (mobile first/small) */
+body{
+    font-family: 'Playfair Display';
+    background-color: var(--linen);
+}
+
+header{
+    background-color: var(--midnight-blue);
+    text-align: center;
+}
+ 
+header > h1 {
+    color: var(--linen);
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+header > p {
+    color: var(--linen);
+    font-style: italic;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+header > nav ul {
+    background-color: var(--champagne-gold);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    color: var(--midnight-blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main {
+    color: var(--dark-charcoal);
+    
+}
+
+main h2 {
+    font-size: 2rem;
+    margin: 50px 50px 10px 50px;
+}
+
+main > p {
+    margin: 0 50px 40px 50px;
+    padding-bottom: 20px;
+    border-bottom: var(--champagne-gold) 2px solid;
+}
+
+
+#offerings {
+    color: var(--dark-charcoal);
+   
+  
+}
+
+#offerings h3{ 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    padding: 20px;
+    
+    
+}
+
+#offerings p {
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.grid{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 50px;
+    padding-bottom: 20px;
+    border-bottom: var(--champagne-gold) 2px solid;
+
+}
+
+#provision {
+    background-color: var(--olive-green);
+    color: var(--linen);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#exclusive {
+    background-color: var(--olive-green);
+    color: var(--linen);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#monthly {
+    background-color: var(--olive-green);
+    color: var(--linen);
+    padding: 10px;
+    border-radius: 10px;
+    grid-column: -1/1;
+    line-height: 1.5;
+}
+
+#monthly nav ul{
+   color: var(--linen);
+   list-style-type: disc;
+   padding-left: 20px;
+}
+
+#gallery h2 {
+    margin: 50px 50px 10px 50px;
+    font-size: 2rem;
+}
+
+#gallery > p {
+    margin: 0 50px 40px 50px;
+}
+
+
+.gallery_photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery_photo > div {
+    width: 100%;
+    background-color: var(--linen);
+    border-radius: 6px;
+    box-shadow: 3px 1px 2px var(--dark-charcoal);
+    text-align: center;
+}
+
+.gallery_photo img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    padding-bottom: 20px;
+}
+
+.gallery_photo p{
+    font-style: italic;
+    margin: 10px;
+}
+#gallery h4 {
+    text-align: center;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#gallery {
+    margin: 30px;
+    border-bottom: var(--champagne-gold) 2px solid;
+}
+
+footer {
+    background-color: var(--midnight-blue);
+    text-align: center;
+    color: var(--linen);
+    padding: 50px;
+    line-height: 1.5;
+}
+
+footer a{
+    color: var(--champagne-gold);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--champagne-gold);
+    padding: 50px;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERY (medium) */
+
+@media (min-width: 600px){
+    .gallery_photo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 30px;
+    }
+    .gallery_photo > div {
+        width: 40%;
+    }
+  
+}
+
+@media (min-width: 900px){
+    .gallery_photo > div {
+        width: 30%;
+    }
+  
+}
+
+@media (min-width: 1200px){
+    .gallery_photo > div {
+        width: 18%;
+    }
+  
+}
+
+
+

@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Field &amp; Feast</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width-device-width, initial-scale= 1">
     </head>
 
     <body>
@@ -27,12 +29,18 @@
             <section id="offerings">
                 <h2>Our Offerings</h2>
                 
+                <div class="grid">
+                <div id="provision">
                 <h3>Artisan Provisions</h3>
                 <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
+                </div>
 
+                <div id="exclusive">
                 <h3>Exclusive Dining Experiences</h3>
                 <p>Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.</p>
-
+                </div>
+                
+                <div id="monthly">
                 <h3>The Field &amp; Feast Monthly Basket</h3>
                 <p>Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.</p>
                 <nav>
@@ -43,35 +51,52 @@
                     </ul>
                 </nav>
                 <p>Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.</p>
+            </div> 
+            </div>
+             
             </section>
 
             <section id="gallery">
                 <h2>A Gallery of Field &amp; Feast</h2>
                 <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
 
-                <div class="tomato">
-                    <img src="images/tomatoes-200w.jpg" alt="picture of red tomatoes on vine">
+                <div class="gallery_photo">
+                <div>
+                    <img src="images/tomatoes-200w.jpg" alt="picture of red tomatoes on vine"
+                    sizes="(min-width: 600px) 200px, (min-width: 900px) 300px, (min-width: 1200px) 600px"
+                    srcset="images/tomatoes-200w.jpg 200w, images/tomatoes-300w.jpg 300w, images/tomatoes-600w.jpg 600w">
+
                     <p>Heirloom tomatoes at peak ripeness.</p>
                 </div>
 
-                <div class="olive_oil">
-                    <img src="images/olive-oil-200w.jpg" alt="olive oil drizzled on harvest with a wooden bowl and board">
+                <div>
+                    <img src="images/olive-oil-200w.jpg" alt="olive oil drizzled on harvest with a wooden bowl and board"
+                    sizes="(min-width: 600px) 200px, (min-width: 900px) 300px, (min-width: 1200px) 600px"
+                    srcset="images/olive-oil-200w.jpg 200w, images/olive-oil-300w.jpg 300w, images/olive-oil-600w.jpg 600w">
                     <p>Drizzling golden olive oil over fresh harvest.</p>
                 </div>
 
-                <div class="tabels">
-                    <img src="images/table-setting-200w.jpg" alt="candle and vines on wooden table">
+                <div>
+                    <img src="images/table-setting-200w.jpg" alt="candle and vines on wooden table"
+                    sizes="(min-width: 600px) 200px, (min-width: 900px) 300px, (min-width: 1200px) 600px"
+                    srcset="images/table-setting-200w.jpg 200w, images/table-setting-300w.jpg 300w, images/table-setting-600w.jpg 600w">
+    
                     <p>Elegant tablescape under the evening sky.</p>
                 </div>
 
-                <div class="chef">
-                    <img src="images/chef-plating-200w.jpg" alt="chef putting bread on plate">
+                <div>
+                    <img src="images/chef-plating-200w.jpg" alt="chef putting bread on plate"
+                    sizes="(min-width: 600px) 200px, (min-width: 900px) 300px, (min-width: 1200px) 600px"
+                    srcset="images/chef-plating-200w.jpg 200w, images/chef-plating-300w.jpg 300w, images/chef-plating-600w.jpg 600w">
                     <p>Artful plating with seasonal ingredients.</p>
                 </div>
 
-                <div class="basket">
-                    <img src="images/basket-200w.jpg" alt="wooden wicker basket field with various fruits">
+                <div>
+                    <img src="images/basket-200w.jpg" alt="wooden wicker basket field with various fruits"
+                    sizes="(min-width: 600px) 200px, (min-width: 900px) 300px, (min-width: 1200px) 600px"
+                    srcset="images/basket-200w.jpg 200w, images/basket-300w.jpg 300w, images/basket-600w.jpg 600w">
                     <p>Our monthly basket, curated with care.</p>
+                </div>
                 </div>
 
                 <h4>View Our Full Gallery</h4>
